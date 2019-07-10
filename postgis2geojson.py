@@ -151,7 +151,7 @@ def getData():
         print "Done!"
 
 def topojson():
-    command = "topojson -o " + arguments.file + ".topojson -p -- " + arguments.file + ".geojson" 
+    command = "geo2topo -o " + arguments.file + ".topojson -p -- " + arguments.file + ".geojson" 
     subprocess.call(command, shell=True)
 
 # Start the process
